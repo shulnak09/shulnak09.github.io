@@ -26,6 +26,16 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+I am a robotics and machine learning researcher developing safe,
+uncertainty-aware, and human-aligned autonomous systems. My work combines
+reinforcement learning, probabilistic prediction, Bayesian modeling, and
+model-based control to help robots operate reliably around people and in
+complex environments.
+
+My current research interests include uncertainty-aware trajectory
+prediction, safe robot planning, multi-agent reinforcement learning,
+active inference, human trust and surprise in human–robot interaction,
+and vision-language models for robot reasoning.
 
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 

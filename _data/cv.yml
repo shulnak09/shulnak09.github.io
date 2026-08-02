@@ -1,189 +1,289 @@
 cv:
   name: Anshul Nayak
-  label: Researcher
-  email: anshulnyak@vt.edu
-  location: Clemson, SC
+  label: Postdoctoral Scholar in Robotics and AI
+  email: anshulnayak@vt.edu
+  phone: "+1 540-998-9324"
+  location: Clemson, South Carolina, US
   image: ""
-  summary: I am a post-doctoral researcher at Clemson Specializing in Robotics and AI.
+  website: https://anshulnayak.com
+  summary: Postdoctoral scholar specializing in deep learning, robotics, control, and autonomous systems, with research spanning vision-language models, multi-agent reinforcement learning, uncertainty-aware prediction and planning, and cooperative perception.
 
   social_networks:
     - network: Google Scholar
-      username: shulnak09
+      username: qc-Gk6QAAAAJ
     - network: GitHub
-      username: example
+      username: shulnak09
     - network: LinkedIn
-      username: example
-
-  address:
-    street: EIB 118, S. Palmetto Blvd
-    city: Clemson
-    region: SC
-    postalCode: 29634
-    countryCode: US
+      username: anshul-nayak09
 
   sections:
+    Research Interests:
+      - name: Robotics and Artificial Intelligence
+        icon: fa-solid fa-microscope
+        keywords: "Vision-language critics, multi-agent reinforcement learning, trajectory optimization, model predictive control, path planning, uncertainty quantification, deep learning, autonomous navigation, obstacle avoidance, cooperative perception, pose estimation, state estimation, sensor fusion, localization, mapping, computer vision, and LiDAR processing"
+
     Education:
       - institution: Virginia Tech
         location: Blacksburg, Virginia, US
-        url: https://www.uzh.ch/
-        area: Mechanical
+        area: Mechanical Engineering
         studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+        start_date: 2021-01
+        end_date: 2024-12
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Thesis: Cooperative Prediction and Planning Under Uncertainty for Autonomous Robots"
+          - "Adviser: Dr. Azim Eskandarian"
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      - institution: Virginia Tech
+        location: Blacksburg, Virginia, US
+        area: Mechanical Engineering
+        studyType: MS
+        start_date: 2018-08
+        end_date: 2020-12
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Thesis: Effect of Kinematics and Caudal Fin Properties on Performance of a Freely-Swimming Fin"
+          - "Adviser: Dr. Hodjat Pendar"
+
+      - institution: National Institute of Technology Rourkela
+        location: Rourkela, Odisha, India
+        area: Mechanical Engineering
+        studyType: BTech
+        start_date: 2011-05
+        end_date: 2015-06
+        highlights:
+          - "Adviser: Dr. Soumya Gangopadhyay"
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: Clemson University
+        position: Postdoctoral Scholar
+        location: Clemson, South Carolina, US
+        start_date: 2025-11
+        end_date: present
         highlights:
-          - Relativity
-          - Description 2.
+          - Developed a belief-aware vision-language model with memory retrieval for long-horizon intent inference and human-like reasoning.
+          - Proposed MA-VLCM, which replaces a learned critic with a pretrained vision-language model to improve sample efficiency and support zero-shot-generalizable multi-agent policies.
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: Virginia Tech Transportation Institute
+        position: Research Associate
+        location: Blacksburg, Virginia, US
+        start_date: 2025-01
+        end_date: 2025-10
         highlights:
-          - Description 1.
-          - Description 2.
+          - Developed a ROS 2-enabled JetBot with onboard depth sensors in Isaac Sim for planning and obstacle avoidance.
+          - Enhanced long-range detection using camera and range sensors for autonomous emergency braking.
+          - Simulated rainy conditions using monocular depth estimation and physics-based particles to study sensor degradation.
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      - company: Honda Research Institute
+        position: Research Intern
+        location: San Jose, California, US
+        start_date: 2024-02
+        end_date: 2024-05
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - "Adviser: Dr. Songpo Li"
+          - Developed a seven-degree-of-freedom human arm model using model predictive control for coordinated reaching and orientation.
+          - Optimized cost-function weights to generate human-like trajectories and validated them against upper-limb motion data.
 
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+      - company: Virginia Tech
+        position: Research Assistant
+        location: Blacksburg, Virginia, US
+        start_date: 2021-01
+        end_date: 2024-12
+        highlights:
+          - "Adviser: Dr. Azim Eskandarian"
+          - Developed an uncertainty-aware social-navigation planner using chance-constrained optimal control and control barrier functions.
+          - Developed a vision-based obstacle-avoidance planner by learning cost-function maps as potential fields.
+          - Developed a sequence-to-sequence Kalman-filter surrogate that captures and propagates sensing uncertainty through deep ensembles for robust trajectory prediction.
+          - Created a Bayesian-inference model with Monte Carlo dropout for trajectory prediction, improving accuracy by 15 percent over deterministic models.
+          - Designed a cooperative prediction algorithm to forecast trajectories of occluded objects in GPS-denied environments.
+          - Proposed a probabilistic rapidly exploring random tree planner using Gaussian processes to enhance proactive collision avoidance.
+          - Built and deployed the autonomous X-CAR platform using ROS and CARMA, including SLAM, vehicle-to-vehicle communication, waypoint generation, and data processing.
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+      - company: Virginia Tech
+        position: Graduate Student Researcher
+        location: Blacksburg, Virginia, US
+        start_date: 2018-08
+        end_date: 2020-12
+        highlights:
+          - "Adviser: Dr. Hodjat Pendar"
+          - Designed a robotic fish to investigate how caudal-fin flexibility, shape, and thickness affect propulsion performance.
+          - Developed a numerical model of fish dynamics and compared thrust and efficiency between freely swimming and tethered fish.
 
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+      - company: Bajaj Auto Limited
+        position: Graduate Trainee Engineer
+        location: Pune, Maharashtra, India
+        start_date: 2015-07
+        end_date: 2018-07
+        highlights:
+          - Co-led multi-body-dynamics simulation work using MSC ADAMS for chassis subsystems.
+          - Led a tire rolling-resistance project that increased the mileage of commercial electric vehicles by 3 percent.
+          - Optimized engine performance using Ricardo WAVE and STAR-CCM+.
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+      - company: Indian Institute of Science
+        position: Summer Research Fellow
+        location: Bengaluru, Karnataka, India
+        start_date: 2014-04
+        end_date: 2014-07
+        highlights:
+          - Contributed to an experimental investigation of swirl flows inside a compact combustor.
+          - Performed ANSYS CFD simulations of swirl patterns to validate experiments and reduce experimental dependency.
 
     Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Programming Languages
+        level: Advanced
+        icon: fa-solid fa-code
+        keywords: "Python, C++, MATLAB"
 
-    Languages:
-      - name: German
-        summary: "Native speaker"
+      - name: Robotics and Machine Learning
+        level: Advanced
+        icon: fa-solid fa-robot
+        keywords: "PyTorch, CasADi, TensorFlow, ROS, ROS 2, Nav2, OpenCV"
 
-      - name: English
-        summary: "Fluent"
+      - name: Simulation and Development
+        level: Advanced
+        icon: fa-solid fa-laptop-code
+        keywords: "Gazebo, Isaac Sim, CARLA, Linux, Docker, Git"
 
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Embedded Systems
+        level: Advanced
+        icon: fa-solid fa-microchip
+        keywords: "Arduino, NVIDIA Jetson"
 
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
+      - name: Sensors and Estimation
+        level: Advanced
+        icon: fa-solid fa-location-crosshairs
+        keywords: "IMU, GPS, LiDAR, cameras, stereo vision, PCL, Open3D, Kalman filters, extended Kalman filters, sensor fusion"
 
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
+      - name: Relevant Coursework
+        icon: fa-solid fa-graduation-cap
+        keywords: "Deep Learning, Reinforcement Learning, Model Predictive Control, Optimization, Nonlinear Systems Theory"
 
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
+    Publications:
+      - title: Prediction Uncertainty-Aware Planning Using Deep Ensembles and Trajectory Optimization
+        authors:
+          - Anshul Nayak
+          - Azim Eskandarian
+        publisher: Under review
+        releaseDate: 2025
+        url: https://arxiv.org/abs/2502.10585
 
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+      - title: Pedestrian Trajectory Forecasting Using Deep Ensembles Under Sensing Uncertainty
+        authors:
+          - Anshul Nayak
+          - Azim Eskandarian
+          - Zachary Doerzaph
+          - Prasenjit Ghorai
+        publisher: IEEE Transactions on Intelligent Transportation Systems
+        releaseDate: 2024
+        url: https://doi.org/10.1109/TITS.2024.3382201
 
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - title: Cooperative Probabilistic Trajectory Prediction Under Occlusion
+        authors:
+          - Anshul Nayak
+          - Azim Eskandarian
+        publisher: IEEE Transactions on Intelligent Vehicles
+        releaseDate: 2024
+        url: https://doi.org/10.1109/TIV.2024.3365651
 
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - title: X-CAR - An Experimental Vehicle Platform for Connected Autonomy Research
+        authors:
+          - Goodarz Mehr
+          - Prasenjit Ghorai
+          - Ce Zhang
+          - Anshul Nayak
+          - Darshit Patel
+          - Shathushan Sivashangaran
+          - Azim Eskandarian
+        publisher: IEEE Intelligent Transportation Systems Magazine
+        releaseDate: 2023
+        url: https://doi.org/10.1109/MITS.2022.3168801
+
+      - title: Uncertainty Estimation of Pedestrian Future Trajectory Using Bayesian Approximation
+        authors:
+          - Anshul Nayak
+          - Azim Eskandarian
+          - Zachary Doerzaph
+        publisher: IEEE Open Journal of Intelligent Transportation Systems
+        releaseDate: 2022
+        url: https://doi.org/10.1109/OJITS.2022.3205504
+
+      - title: Motion Planning of Autonomous Vehicles Under Dynamic Traffic Environment in Intersections Using Probabilistic Rapidly Exploring Random Tree
+        authors:
+          - Xihui Wu
+          - Anshul Nayak
+          - Azim Eskandarian
+        publisher: SAE International Journal of Connected and Automated Vehicles
+        releaseDate: 2021
+        url: https://doi.org/10.4271/12-04-04-0029
+
+      - title: A Comparative Study on Feature Descriptors for Relative Pose Estimation in Connected Vehicles
+        authors:
+          - Anshul Nayak
+          - Azim Eskandarian
+          - Prasenjit Ghorai
+          - Zachary Doerzaph
+        publisher: ASME 2021 International Mechanical Engineering Congress and Exposition
+        releaseDate: 2021
+        url: https://doi.org/10.1115/IMECE2021-70693
+
+      - title: Relative Pose Estimation for Cooperative Vehicles and Tracking of Multiple Dynamic Objects
+        authors:
+          - Prasenjit Ghorai
+          - Azim Eskandarian
+          - Anshul Nayak
+          - Zachary Doerzaph
+        publisher: ASME 2021 International Mechanical Engineering Congress and Exposition
+        releaseDate: 2021
+        url: https://doi.org/10.1115/IMECE2021-69651
+
+      - title: Effect of Kinematics and Physical Properties of Caudal Fin on Performance of a Robotic Fish
+        authors:
+          - Anshul Nayak
+          - Hodjat Pendar
+        publisher: APS March Meeting Abstracts
+        releaseDate: 2021
+
+      - title: Performance Comparison of a Tethered and Freely-Swimming Fin
+        authors:
+          - Anshul Nayak
+          - E. Masroor
+          - Hodjat Pendar
+        publisher: Under review at Bioinspiration and Biomimetics
+
+      - title: Modelling, Simulation and Experimental Investigation for Generating ‘I’ Shaped Contour on Inconel 825 Using Electrochemical Machining
+        authors:
+          - Anshul Nayak
+          - S. Gangopadhyay
+          - D. K. Sahoo
+        publisher: Journal of Manufacturing Processes
+        releaseDate: 2016
+        url: https://doi.org/10.1016/j.jmapro.2016.05.001
+
+    Awards:
+      - title: Pratt Fellowship
+        authors:
+          - Virginia Tech Department of Mechanical Engineering
+        date: 2024
+        awarder: Virginia Tech
+        summary: Prestigious fellowship awarded by the Department of Mechanical Engineering.
+
+      - title: Summer Research Fellowship
+        authors:
+          - Indian Academy of Sciences
+          - Indian National Science Academy
+          - National Academy of Sciences, India
+        date: 2014
+        awarder: IASc-INSA-NASI
+        summary: Fellowship supporting summer research at the Indian Institute of Science.
+
+      - title: Mahindra Baja SAE Finalist
+        authors:
+          - SAE India
+        date: 2012
+        awarder: Mahindra Baja SAE Indian Student Chapter
+        summary: Finalist at the Mahindra Baja SAE competition in Pithampur, India.
+
+    Services:
+      - label: Reviewer
+        details: IEEE Transactions on Intelligent Transportation Systems, IEEE Transactions on Intelligent Vehicles, and IEEE International Conference on Intelligent Transportation Systems
+
+      - label: External Reviewer
+        details: IEEE Intelligent Vehicles Symposium and IEEE IV 2022

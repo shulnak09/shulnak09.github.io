@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 4
-description: another without an image
+title: Cooperative Trajectory Forecasting under Occlusion
+description: Reliable tracking and prediction of occluded dynamic object has been achieved through an end-to-end network that performs simultaneous pose recovery and applies rigid body transformation to estimate pedestrian in occluded camera's reference which is further utilized to predict future states of the occluded object with safety guarantees.
 img:
-importance: 3
-category: fun
+importance: 4
+category: current
 ---
 
 Every project has a beautiful feature showcase page.

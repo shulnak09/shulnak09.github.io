@@ -20,11 +20,12 @@ cv:
     Research Interests:
       - name: Robotics and Artificial Intelligence
         icon: fa-solid fa-microscope
-        keywords: "Vision-language critics, multi-agent reinforcement learning, trajectory optimization, model predictive control, path planning, uncertainty quantification, deep learning, autonomous navigation, obstacle avoidance, cooperative perception, pose estimation, state estimation, sensor fusion, localization, mapping, computer vision, and LiDAR processing"
+        keywords: "Vision-language critics, multi-agent reinforcement learning, trajectory optimization, model predictive control, path planning, uncertainty quantification, deep learning,
+         autonomous navigation, obstacle avoidance, cooperative perception, pose estimation, state estimation, sensor fusion, localization, mapping, computer vision, and LiDAR processing"
 
     Education:
       - institution: Virginia Tech
-        location: Blacksburg, Virginia, US
+        location: Blacksburg, VA, USA
         area: Mechanical Engineering
         studyType: PhD
         start_date: 2021-01
@@ -34,7 +35,7 @@ cv:
           - "Adviser: Dr. Azim Eskandarian"
 
       - institution: Virginia Tech
-        location: Blacksburg, Virginia, US
+        location: Blacksburg, VA, USA
         area: Mechanical Engineering
         studyType: MS
         start_date: 2018-08
@@ -55,11 +56,10 @@ cv:
     Experience:
       - company: Clemson University
         position: Postdoctoral Scholar
-        location: Clemson, SC, US
+        location: Clemson, SC, USA
         start_date: 2025-11
         end_date: present
         highlights:
-          - 
           - Developed a belief-aware vision-language model with memory retrieval for long-horizon intent inference and human-like reasoning.
           - Proposed MA-VLCM, which replaces a learned critic with a pretrained vision-language model to improve sample efficiency and support zero-shot-generalizable multi-agent policies.
 
@@ -100,7 +100,7 @@ cv:
 
       - company: Virginia Tech
         position: Graduate Student Researcher
-        location: Blacksburg, VA, US
+        location: Blacksburg, VA, USA
         start_date: 2018-08
         end_date: 2020-12
         highlights:

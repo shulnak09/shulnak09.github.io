@@ -55,26 +55,26 @@ cv:
     Experience:
       - company: Clemson University
         position: Postdoctoral Scholar
-        location: Clemson, South Carolina, US
+        location: Clemson, SC, US
         start_date: 2025-11
         end_date: present
         highlights:
+          - 
           - Developed a belief-aware vision-language model with memory retrieval for long-horizon intent inference and human-like reasoning.
           - Proposed MA-VLCM, which replaces a learned critic with a pretrained vision-language model to improve sample efficiency and support zero-shot-generalizable multi-agent policies.
 
       - company: Virginia Tech Transportation Institute
         position: Research Associate
-        location: Blacksburg, Virginia, US
+        location: Blacksburg, VA, USA
         start_date: 2025-01
         end_date: 2025-10
         highlights:
-          - Developed a ROS 2-enabled JetBot with onboard depth sensors in Isaac Sim for planning and obstacle avoidance.
           - Enhanced long-range detection using camera and range sensors for autonomous emergency braking.
           - Simulated rainy conditions using monocular depth estimation and physics-based particles to study sensor degradation.
 
       - company: Honda Research Institute
         position: Research Intern
-        location: San Jose, California, US
+        location: San Jose, CA, USA
         start_date: 2024-02
         end_date: 2024-05
         highlights:
@@ -84,7 +84,7 @@ cv:
 
       - company: Virginia Tech
         position: Research Assistant
-        location: Blacksburg, Virginia, US
+        location: Blacksburg, VA, USA
         start_date: 2021-01
         end_date: 2024-12
         highlights:
@@ -99,7 +99,7 @@ cv:
 
       - company: Virginia Tech
         position: Graduate Student Researcher
-        location: Blacksburg, Virginia, US
+        location: Blacksburg, VA, US
         start_date: 2018-08
         end_date: 2020-12
         highlights:
@@ -107,24 +107,24 @@ cv:
           - Designed a robotic fish to investigate how caudal-fin flexibility, shape, and thickness affect propulsion performance.
           - Developed a numerical model of fish dynamics and compared thrust and efficiency between freely swimming and tethered fish.
 
-      - company: Bajaj Auto Limited
-        position: Graduate Trainee Engineer
-        location: Pune, Maharashtra, India
-        start_date: 2015-07
-        end_date: 2018-07
-        highlights:
-          - Co-led multi-body-dynamics simulation work using MSC ADAMS for chassis subsystems.
-          - Led a tire rolling-resistance project that increased the mileage of commercial electric vehicles by 3 percent.
-          - Optimized engine performance using Ricardo WAVE and STAR-CCM+.
+      # - company: Bajaj Auto Limited
+      #   position: Graduate Trainee Engineer
+      #   location: Pune, Maharashtra, India
+      #   start_date: 2015-07
+      #   end_date: 2018-07
+      #   highlights:
+      #     - Co-led multi-body-dynamics simulation work using MSC ADAMS for chassis subsystems.
+      #     - Led a tire rolling-resistance project that increased the mileage of commercial electric vehicles by 3 percent.
+      #     - Optimized engine performance using Ricardo WAVE and STAR-CCM+.
 
-      - company: Indian Institute of Science
-        position: Summer Research Fellow
-        location: Bengaluru, Karnataka, India
-        start_date: 2014-04
-        end_date: 2014-07
-        highlights:
-          - Contributed to an experimental investigation of swirl flows inside a compact combustor.
-          - Performed ANSYS CFD simulations of swirl patterns to validate experiments and reduce experimental dependency.
+      # - company: Indian Institute of Science
+      #   position: Summer Research Fellow
+      #   location: Bengaluru, Karnataka, India
+      #   start_date: 2014-04
+      #   end_date: 2014-07
+      #   highlights:
+      #     - Contributed to an experimental investigation of swirl flows inside a compact combustor.
+      #     - Performed ANSYS CFD simulations of swirl patterns to validate experiments and reduce experimental dependency.
 
     Skills:
       - name: Programming Languages

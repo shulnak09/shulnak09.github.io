@@ -89,13 +89,14 @@ cv:
         end_date: 2024-12
         highlights:
           - "Adviser: Dr. Azim Eskandarian"
-          - Developed an uncertainty-aware social-navigation planner using chance-constrained optimal control and control barrier functions.
-          - Developed a vision-based obstacle-avoidance planner by learning cost-function maps as potential fields.
-          - Developed a sequence-to-sequence Kalman-filter surrogate that captures and propagates sensing uncertainty through deep ensembles for robust trajectory prediction.
-          - Created a Bayesian-inference model with Monte Carlo dropout for trajectory prediction, improving accuracy by 15 percent over deterministic models.
-          - Designed a cooperative prediction algorithm to forecast trajectories of occluded objects in GPS-denied environments.
-          - Proposed a probabilistic rapidly exploring random tree planner using Gaussian processes to enhance proactive collision avoidance.
-          - Built and deployed the autonomous X-CAR platform using ROS and CARMA, including SLAM, vehicle-to-vehicle communication, waypoint generation, and data processing.
+          - Developed uncertainty-aware social-navigation planners using chance constraints and control barrier functions.
+          - Learned vision-based potential-field cost maps for obstacle avoidance.
+          - Built a sequence-to-sequence Kalman-filter surrogate with deep ensembles to propagate sensing uncertainty.
+          - Applied Monte Carlo dropout for Bayesian trajectory prediction, improving accuracy by 15% over deterministic models.
+          - Designed cooperative prediction for occluded objects in GPS-denied environments.
+          - Proposed a Gaussian-process-based probabilistic RRT for proactive collision avoidance.
+          - Deployed the ROS/CARMA-based autonomous X-CAR platform with SLAM, V2V communication, waypoint generation, and data processing.
+
 
       - company: Virginia Tech
         position: Graduate Student Researcher

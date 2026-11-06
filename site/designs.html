@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Three website design directions for Anshul Nayak’s academic research." />
+    <title>Anshul Nayak · Three website directions</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #f3f4ef;
+        color: #23332a;
+        font-family:
+          Inter,
+          ui-sans-serif,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      a:focus-visible {
+        outline: 3px solid #206447;
+        outline-offset: 6px;
+      }
+      .wrap {
+        max-width: 1280px;
+        margin: auto;
+        padding: 0 48px;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #d9dfd7;
+        padding: 28px 0;
+        font-size: 12px;
+      }
+      .brand {
+        font-weight: 650;
+        letter-spacing: -0.3px;
+        font-size: 16px;
+      }
+      .small {
+        font-size: 10px;
+        color: #768176;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+      }
+      .intro {
+        padding: 58px 0 42px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 40px;
+      }
+      .intro h1 {
+        font-size: clamp(32px, 4vw, 51px);
+        letter-spacing: -2px;
+        font-weight: 500;
+        line-height: 1.08;
+        margin: 13px 0 0;
+      }
+      .intro h1 em {
+        font-family: Georgia, serif;
+        font-weight: 400;
+        color: #6b7b64;
+      }
+      .intro p {
+        font-size: 13px;
+        color: #6b766d;
+        max-width: 285px;
+        line-height: 1.8;
+        margin: 0 0 3px;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+      }
+      .card {
+        display: block;
+        background: #fff;
+        border: 1px solid #d9dfd7;
+        border-radius: 7px;
+        overflow: hidden;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 28px #1322170b;
+      }
+      .mock {
+        height: 330px;
+        padding: 26px 24px;
+        overflow: hidden;
+        position: relative;
+        border-bottom: 1px solid #e0e4dd;
+      }
+      .mock-nav {
+        display: flex;
+        justify-content: space-between;
+        font-size: 6px;
+        padding-bottom: 13px;
+        border-bottom: 1px solid #d5dfd5;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+      .mock-body {
+        position: relative;
+      }
+      .mock h2 {
+        font-size: 27px;
+        margin: 23px 0 8px;
+        letter-spacing: -1px;
+        font-weight: 500;
+        line-height: 1.1;
+      }
+      .mock p {
+        font-size: 7px;
+        line-height: 1.8;
+        color: #7b827b;
+        margin: 7px 0;
+        max-width: 65%;
+      }
+      .mock img {
+        object-fit: cover;
+      }
+      .mock-photo {
+        position: absolute;
+        right: 0;
+        top: 23px;
+        width: 72px;
+        height: 85px;
+        border-radius: 2px;
+      }
+      .mock-tag {
+        font-size: 5px;
+        color: #206447;
+        letter-spacing: 1px;
+        margin-top: 15px;
+      }
+      .mock-lines {
+        margin-top: 21px;
+        width: 100%;
+        height: 32px;
+        background: repeating-linear-gradient(to bottom, #eef2ec 0, #eef2ec 2px, transparent 2px, transparent 8px);
+      }
+      .mini-projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 9px;
+        margin-top: 17px;
+      }
+      .mini-projects img {
+        width: 100%;
+        height: 54px;
+        background: #edf1eb;
+        object-fit: cover;
+      }
+      .mini-projects span {
+        font-size: 5px;
+        display: block;
+        line-height: 1.5;
+        margin-top: 5px;
+      }
+      .editorial {
+        background: #f7f3ec;
+        color: #332d29;
+      }
+      .editorial .mock-nav {
+        border-color: #766c65;
+        font-family: Georgia, serif;
+      }
+      .editorial h2 {
+        font-family: Georgia, serif;
+        font-size: 44px;
+        font-weight: 400;
+        letter-spacing: -2.4px;
+        margin: 19px 0;
+        border-bottom: 1px solid #dacfc3;
+        padding-bottom: 12px;
+      }
+      .editorial h2 em {
+        color: #a44d36;
+        font-weight: 400;
+      }
+      .editorial .mock-photo {
+        position: relative;
+        width: 80px;
+        height: 108px;
+        top: auto;
+        right: auto;
+        float: left;
+        margin-right: 17px;
+        border-radius: 0;
+        filter: saturate(0.7);
+      }
+      .editorial .mock-statement {
+        font-family: Georgia, serif;
+        font-size: 17px;
+        line-height: 1.2;
+        padding-top: 4px;
+        letter-spacing: -0.5px;
+      }
+      .editorial p {
+        max-width: 100%;
+        font-size: 7px;
+      }
+      .editorial .mini-projects {
+        clear: both;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 20px;
+        margin-top: 0;
+      }
+      .editorial .mini-projects img {
+        height: 64px;
+      }
+      .studio {
+        background: #0e1720;
+        color: #edf3f2;
+      }
+      .studio .mock-nav {
+        border-color: #2a3a45;
+      }
+      .studio h2 {
+        font-size: 35px;
+        font-weight: 500;
+        letter-spacing: -1.5px;
+        line-height: 0.98;
+        margin-top: 23px;
+      }
+      .studio h2 span {
+        color: #bde8b3;
+      }
+      .studio p {
+        color: #97aab4;
+        max-width: 65%;
+        font-size: 7px;
+      }
+      .mini-orbit {
+        position: absolute;
+        width: 95px;
+        height: 130px;
+        right: -7px;
+        top: 48px;
+        border: 1px solid #648880;
+        border-radius: 50%;
+        transform: rotate(25deg);
+      }
+      .mini-orbit:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border: 1px solid #648880;
+        border-radius: 50%;
+        transform: rotate(70deg);
+      }
+      .mini-orbit:after {
+        content: "A+";
+        position: absolute;
+        font-size: 30px;
+        top: 40px;
+        left: 30px;
+        color: #bde8b3;
+        transform: rotate(-25deg);
+      }
+      .studio .mini-projects {
+        grid-template-columns: 1fr 1fr;
+      }
+      .studio .mini-projects img {
+        height: 56px;
+      }
+      .card-bottom {
+        padding: 24px;
+      }
+      .card-number {
+        font-size: 10px;
+        font-family: ui-monospace, monospace;
+        color: #879085;
+      }
+      .card h3 {
+        font-size: 23px;
+        font-weight: 500;
+        letter-spacing: -0.8px;
+        margin: 10px 0;
+      }
+      .card-bottom p {
+        font-size: 12px;
+        line-height: 1.8;
+        color: #6b766d;
+        min-height: 65px;
+        margin: 0;
+      }
+      .open {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #e1e6df;
+        margin-top: 18px;
+        padding-top: 17px;
+        font-size: 11px;
+        font-weight: 550;
+      }
+      .open span:last-child {
+        font-size: 19px;
+        color: #206447;
+      }
+      .details {
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: 50px;
+        margin: 44px 0 48px;
+        border-top: 1px solid #d9dfd7;
+        padding-top: 28px;
+      }
+      .details h3 {
+        font-size: 12px;
+        font-weight: 550;
+        margin: 0 0 9px;
+      }
+      .details p {
+        font-size: 11px;
+        color: #748072;
+        line-height: 1.9;
+        margin: 0;
+      }
+      .details a {
+        color: #31553d;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+      footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 22px 0;
+        border-top: 1px solid #d9dfd7;
+        font-size: 10px;
+        color: #7d877a;
+      }
+      footer a {
+        color: #31553d;
+      }
+      @media (max-width: 1000px) {
+        .wrap {
+          padding: 0 28px;
+        }
+        .cards {
+          gap: 14px;
+        }
+        .mock {
+          height: 290px;
+          padding: 21px 17px;
+        }
+        .mock h2 {
+          font-size: 24px;
+        }
+        .editorial h2 {
+          font-size: 34px;
+        }
+        .studio h2 {
+          font-size: 30px;
+        }
+        .mock-photo {
+          width: 55px;
+          height: 72px;
+        }
+        .editorial .mock-photo {
+          width: 65px;
+          height: 90px;
+        }
+        .editorial .mock-statement {
+          font-size: 14px;
+        }
+        .mini-orbit {
+          width: 70px;
+          height: 105px;
+          right: -4px;
+          top: 50px;
+        }
+        .mini-orbit:after {
+          left: 19px;
+          top: 33px;
+          font-size: 25px;
+        }
+        .card-bottom {
+          padding: 21px;
+        }
+        .card h3 {
+          font-size: 20px;
+        }
+      }
+      @media (max-width: 760px) {
+        .wrap {
+          padding: 0 22px;
+        }
+        header {
+          padding: 23px 0;
+        }
+        .intro {
+          display: block;
+          padding: 37px 0 28px;
+        }
+        .intro h1 {
+          font-size: 40px;
+          letter-spacing: -1.7px;
+        }
+        .intro p {
+          margin-top: 22px;
+          font-size: 12px;
+          max-width: 400px;
+        }
+        .cards {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
+        .card {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+        .mock {
+          height: 280px;
+          border: 0;
+          border-right: 1px solid #e0e4dd;
+          padding: 22px 18px;
+        }
+        .card-bottom {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 22px;
+        }
+        .card h3 {
+          font-size: 21px;
+        }
+        .card-bottom p {
+          font-size: 11px;
+          min-height: 0;
+        }
+        .open {
+          font-size: 10px;
+        }
+        .details {
+          grid-template-columns: 1fr;
+          gap: 20px;
+          margin: 34px 0;
+        }
+        .mock h2 {
+          font-size: 23px;
+        }
+        .editorial h2 {
+          font-size: 33px;
+        }
+        .studio h2 {
+          font-size: 30px;
+        }
+        header .small {
+          font-size: 8px;
+        }
+        .mini-orbit {
+          right: -16px;
+        }
+        .mock-photo {
+          width: 45px;
+          height: 60px;
+        }
+        .editorial .mock-photo {
+          width: 58px;
+          height: 80px;
+        }
+        .editorial .mock-statement {
+          font-size: 13px;
+        }
+      }
+      @media (max-width: 420px) {
+        .card {
+          display: block;
+        }
+        .mock {
+          height: 315px;
+          padding: 26px;
+        }
+        .mock h2 {
+          font-size: 30px;
+        }
+        .mock-photo {
+          width: 75px;
+          height: 90px;
+        }
+        .editorial h2 {
+          font-size: 46px;
+        }
+        .editorial .mock-photo {
+          width: 80px;
+          height: 108px;
+        }
+        .editorial .mock-statement {
+          font-size: 18px;
+        }
+        .studio h2 {
+          font-size: 39px;
+        }
+        .mini-orbit {
+          width: 100px;
+          height: 140px;
+          right: 0;
+        }
+        .mini-orbit:after {
+          left: 30px;
+          top: 48px;
+          font-size: 30px;
+        }
+        .card-bottom {
+          padding: 23px;
+        }
+        .card-bottom p {
+          font-size: 12px;
+        }
+        .intro h1 {
+          font-size: 37px;
+        }
+        .details p {
+          font-size: 11px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          transition: none !important;
+        }
+      }
+    </style>
+    <meta name="robots" content="noindex, follow" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header><a class="brand" href="index.html">Anshul Nayak</a><span class="small">Website design collection / 01–03</span></header>
+      <main>
+        <section class="intro">
+          <div>
+            <span class="small">Your research, three ways</span>
+            <h1>A new home for<br /><em>your work.</em></h1>
+          </div>
+          <p>
+            Explore three complete directions for your academic website. Each presents the same biography, research, publications, and CV in a
+            different visual style.
+          </p>
+        </section>
+        <section class="cards" aria-label="Choose a website design">
+          <a class="card" href="classic.html"
+            ><div class="mock classic" aria-hidden="true">
+              <div class="mock-nav"><span>Anshul Nayak</span><span>Research · Papers · About</span></div>
+              <div class="mock-body">
+                <h2>Anshul Nayak</h2>
+                <img class="mock-photo" src="assets/portrait.jpg" alt="" />
+                <p>Postdoctoral Research Scholar<br />Clemson University</p>
+                <p>Safe, uncertainty-aware, and human-aligned autonomous systems.</p>
+                <div class="mock-tag">EMAIL &nbsp; SCHOLAR &nbsp; GITHUB &nbsp; CV</div>
+                <div class="mock-lines"></div>
+                <div class="mini-projects">
+                  <div><img src="assets/uncertainty.gif" alt="" /><span>Planning with uncertainty</span></div>
+                  <div><img src="assets/belief-architecture.png" alt="" /><span>Belief-aware reasoning</span></div>
+                  <div><img src="assets/team-schematic.svg" alt="" /><span>Multi-agent teams</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <span class="card-number">DIRECTION 01</span>
+              <h3>Academic</h3>
+              <p>Clear, quiet, and research-first. A familiar academic layout with a compact introduction and an easy-to-scan publication list.</p>
+              <div class="open"><span>Explore Academic</span><span>↗</span></div>
+            </div></a
+          >
+          <a class="card" href="editorial.html"
+            ><div class="mock editorial" aria-hidden="true">
+              <div class="mock-nav"><span>Anshul Nayak</span><span>Research · Publications</span></div>
+              <h2>Anshul <em>Nayak.</em></h2>
+              <img class="mock-photo" src="assets/portrait.jpg" alt="" />
+              <div class="mock-statement">Autonomous systems.<br /><em>Human-aware decisions.</em></div>
+              <p>Planning under uncertainty.<br />Robots that understand people.</p>
+              <div class="mini-projects"><img src="assets/uncertainty.gif" alt="" /><img src="assets/belief-architecture.png" alt="" /></div>
+            </div>
+            <div class="card-bottom">
+              <span class="card-number">DIRECTION 02</span>
+              <h3>Editorial</h3>
+              <p>
+                Warm, spacious, and typography-led. A distinctive personal presence, generous research imagery, and a journal-like reading rhythm.
+              </p>
+              <div class="open"><span>Explore Editorial</span><span>↗</span></div>
+            </div></a
+          >
+          <a class="card" href="studio.html"
+            ><div class="mock studio" aria-hidden="true">
+              <div class="mock-nav"><span>AN / ROBOTICS</span><span>Research · About</span></div>
+              <div class="mock-body">
+                <h2>
+                  Robots that<br />reason.<br /><span>Teams that<br />adapt.</span>
+                </h2>
+                <div class="mini-orbit"></div>
+                <p>Anshul Nayak / Clemson University<br />Safe autonomy. Shared understanding.</p>
+                <div class="mini-projects"><img src="assets/uncertainty.gif" alt="" /><img src="assets/team-schematic.svg" alt="" /></div>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <span class="card-number">DIRECTION 03</span>
+              <h3>Research studio</h3>
+              <p>Bold, visual, and project-led. A dark canvas, a stronger research statement, and larger media cards for demonstrations.</p>
+              <div class="open"><span>Explore Research studio</span><span>↗</span></div>
+            </div></a
+          >
+        </section>
+        <section class="details">
+          <div>
+            <h3>Compare freely</h3>
+            <p>
+              The selector at the top of each design lets you switch versions. Academic is the main website. Explore Editorial and Research studio
+              here to compare their layouts.
+            </p>
+          </div>
+          <div>
+            <h3>Research in every view</h3>
+            <p>Browse research demonstrations, publications, and professional experience in all three designs.</p>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <span>Prepared from your updated CV and existing research website.</span><a href="assets/Anshul-Nayak-CV.pdf">View updated CV ↗</a>
+      </footer>
+    </div>
+  </body>
+</html>

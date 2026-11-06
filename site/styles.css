@@ -1584,3 +1584,25 @@ body[data-layout="studio"] dialog {
 body:not(.js-enabled) .publication-controls {
   display: none;
 }
+
+/* Writing and book notes */
+.writing {
+  max-width: 760px;
+  min-height: 55vh;
+  padding: 70px 0 90px;
+}
+.writing h1 {
+  font-family: var(--serif);
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.1;
+  margin: 12px 0 20px;
+}
+.writing-intro { color: var(--muted); font-size: 18px; line-height: 1.6; }
+.book-list { display: grid; gap: 20px; margin-top: 36px; }
+.book-card { display: flex; gap: 24px; align-items: center; padding: 20px; border: 1px solid var(--line); color: var(--ink); line-height: 1.8; }
+.book-card img { width: 85px; height: 125px; object-fit: cover; }
+.book-card strong { font-family: var(--serif); font-size: 22px; }
+.book-card span span { color: var(--accent); font-size: 13px; }
+.book-notes { line-height: 1.8; overflow-wrap: anywhere; }
+.book-notes h2, .book-notes h3 { font-family: var(--serif); line-height: 1.3; margin-top: 2em; }
+.site-header nav { flex-wrap: wrap; }

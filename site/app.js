@@ -18,7 +18,7 @@
           .map(([k, v]) => `<a href="${k}.html" ${layout === k ? 'aria-current="page"' : ""}>${v}</a>`)
           .join("")}</nav><span class="preview-note">Three directions. One researcher.</span></aside>`;
   const nav = () =>
-    `<header class="site-header"><a class="wordmark" href="#top">${layout === "studio" ? "AN / ROBOTICS" : D.name}</a><nav aria-label="Page sections"><a href="#research">Research</a><a href="#publications">Publications</a><a href="#about">About</a><a href="mailto:${D.email}">Contact ↗</a></nav></header>`;
+    `<header class="site-header"><a class="wordmark" href="#top">${layout === "studio" ? "AN / ROBOTICS" : D.name}</a><nav aria-label="Page sections"><a href="#research">Research</a><a href="#publications">Publications</a><a href="#about">About</a><a href="blog.html">Blog</a><a href="tutorials.html">Tutorials</a><a href="books.html">Books</a><a href="mailto:${D.email}">Contact ↗</a></nav></header>`;
   const portrait = () =>
     `<figure class="portrait"><img src="assets/portrait.jpg" alt="Portrait of Anshul Nayak" width="600" height="600"><figcaption>Clemson University · South Carolina</figcaption></figure>`;
   const hero = () =>

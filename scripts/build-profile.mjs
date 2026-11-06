@@ -25,6 +25,8 @@ for (const [page, layout] of Object.entries({ index: "classic", classic: "classi
 
 // Preserve links in the supplied résumé and the previous Jekyll site.
 const redirects = {
+  "key-takeaways-from-james-clears-atomic-habits": "/atomic-habits.html",
+  "how-to-win-friends-and-influence-people-lessons": "/how-to-win-friends.html",
   "current-projects": "/#research",
   projects: "/#research",
   publications: "/#publications",

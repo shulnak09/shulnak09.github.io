@@ -1,3 +1,5 @@
+> **Personal website:** The new Academic profile lives in `site/`. See [preview, editing, GitHub Pages, and Hostinger domain setup](docs/PROFILE_SITE.md). The al-folio documentation below describes the retained starter.
+
 # al-folio
 
 <div align="center">

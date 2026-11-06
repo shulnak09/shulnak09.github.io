@@ -20,8 +20,9 @@ cv:
     Research Interests:
       - name: Robotics and Artificial Intelligence
         icon: fa-solid fa-microscope
-        keywords: "Vision-language critics, multi-agent reinforcement learning, trajectory optimization, model predictive control, path planning, uncertainty quantification, deep learning,
-         autonomous navigation, obstacle avoidance, cooperative perception, pose estimation, state estimation, sensor fusion, localization, mapping, computer vision, and LiDAR processing"
+        keywords:
+          "Vision-language critics, multi-agent reinforcement learning, trajectory optimization, model predictive control, path planning, uncertainty quantification, deep learning,
+          autonomous navigation, obstacle avoidance, cooperative perception, pose estimation, state estimation, sensor fusion, localization, mapping, computer vision, and LiDAR processing"
 
     Education:
       - institution: Virginia Tech
@@ -96,7 +97,6 @@ cv:
           - Designed cooperative prediction for occluded objects in GPS-denied environments.
           - Proposed a Gaussian-process-based probabilistic RRT for proactive collision avoidance.
           - Deployed the ROS/CARMA-based autonomous X-CAR platform with SLAM, V2V communication, waypoint generation, and data processing.
-
 
       - company: Virginia Tech
         position: Graduate Student Researcher

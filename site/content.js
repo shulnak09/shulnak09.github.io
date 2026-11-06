@@ -31,7 +31,7 @@ window.ACADEMIC = {
       title: "Multi-agent vision-language critic model",
       description:
         "Using a pretrained vision-language model as a critic for multi-agent policy evaluation, with task descriptions, visual trajectories, and structured team states.",
-      image: "assets/team-schematic.svg",
+      image: "",
       alt: "Illustrative diagram of agents sharing information with a vision-language critic",
       paper: "https://arxiv.org/abs/2603.15418",
       video: "assets/formation_control_agents_05.mp4",

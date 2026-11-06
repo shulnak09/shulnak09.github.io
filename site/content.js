@@ -12,21 +12,10 @@ window.ACADEMIC = {
   background:
     "I am a Postdoctoral Research Scholar at Clemson University. I received my Ph.D. in Mechanical Engineering from Virginia Tech in December 2024, advised by Azim Eskandarian. Previously, I worked at the Virginia Tech Transportation Institute and Honda Research Institute.",
   research: [
-    {
-      id: "planning",
-      label: "01 / Safe autonomy",
-      title: "Planning with uncertainty",
-      description:
-        "Bringing uncertainty in perception and prediction into robot motion planning, with deep ensembles, model predictive control, and control barrier functions.",
-      image: "assets/uncertainty.gif",
-      alt: "Simulation from uncertainty-aware social navigation research",
-      paper: "https://arxiv.org/abs/2502.10585",
-      video: "",
-      tags: ["Motion planning", "Deep ensembles"],
-    },
+
     {
       id: "reasoning",
-      label: "02 / Human–robot interaction",
+      label: "01 / Human–robot interaction",
       title: "Belief-aware robot reasoning",
       description:
         "Using retrieval-based multimodal memory to reason about intent in partially observable, long-horizon tasks and support human-like reasoning.",
@@ -38,21 +27,45 @@ window.ACADEMIC = {
     },
     {
       id: "teams",
-      label: "03 / Cooperative intelligence",
-      title: "Learning in multi-agent teams",
+      label: "02 / Cooperative intelligence",
+      title: "Multi-agent vision-language critic model",
       description:
-        "Using a pretrained vision-language model as a critic for policy evaluation, with task descriptions, visual trajectories, and structured team state.",
+        "Using a pretrained vision-language model as a critic for multi-agent policy evaluation, with task descriptions, visual trajectories, and structured team states.",
       image: "assets/team-schematic.svg",
       alt: "Illustrative diagram of agents sharing information with a vision-language critic",
       paper: "https://arxiv.org/abs/2603.15418",
-      video: "",
+      video: "site/assets/formation_control_agents_05.mp4",
       tags: ["Multi-agent learning", "MA-VLCM"],
+      schematic: true,
+    },
+        {
+      id: "planning",
+      label: "03 / Safe autonomy",
+      title: "Planning with uncertainty",
+      description:
+        "Bringing uncertainty in perception and prediction into robot motion planning, with deep ensembles, model predictive control, and control barrier functions.",
+      image: "assets/uncertainty.gif",
+      alt: "Simulation from uncertainty-aware social navigation research",
+      paper: "https://arxiv.org/abs/2502.10585",
+      video: "",
+      tags: ["Motion planning", "Deep ensembles"],
+    },
+        {
+      id: "PbRL",
+      label: "04 / Reinforcement learning from human feedback",
+      title: "reason-guided preference-based  learning",
+      description: "Reason-guided preference based learning where policy alignment is conditioned on both human preferences as well as reasons",
+      image: "site/assets/CPHS_architecture.png",
+      alt: "",
+      paper: "https://arxiv.org/pdf/2610.23550",
+      video: "",
+      tags: ["Preference learning", "RLHF"],
       schematic: true,
     },
     {
       id: "occlusion",
-      label: "04 / Cooperative perception",
-      title: "Seeing beyond occlusion",
+      label: "05 / Cooperative perception",
+      title: "Perception beyond occlusion",
       description:
         "Cooperative trajectory forecasting that shares observations between connected agents to estimate and predict the motion of occluded pedestrians.",
       image: "assets/cooperative-perception.gif",
@@ -63,7 +76,7 @@ window.ACADEMIC = {
     },
     {
       id: "humanmotion",
-      label: "05 / Human motion",
+      label: "06 / Human motion",
       title: "Human-like upper-limb motion",
       description:
         "Model predictive control for a seven-degree-of-freedom arm model, generating smooth reaching and orientation motions and validating against human motion data.",
@@ -75,7 +88,7 @@ window.ACADEMIC = {
     },
     {
       id: "koopman",
-      label: "06 / Social navigation",
+      label: "07 / Social navigation",
       title: "Learning pedestrian dynamics",
       description: "Deep-Koopman predictive control for social navigation, bringing learned pedestrian motion into proactive collision avoidance.",
       image: "assets/koopman-schematic.svg",
@@ -85,6 +98,7 @@ window.ACADEMIC = {
       tags: ["Koopman operators", "Under review"],
       schematic: true,
     },
+
   ],
   news: [
     {

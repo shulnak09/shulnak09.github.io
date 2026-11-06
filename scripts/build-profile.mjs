@@ -9,6 +9,10 @@ const output = new URL("../_site/", import.meta.url);
 await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 await cp(source, output, { recursive: true });
+// Keep unpublished writing in the repository for later, without deploying it.
+for (const page of ["blog.html", "tutorials.html", "books.html", "atomic-habits.html", "how-to-win-friends.html"]) {
+  await rm(new URL(page, output));
+}
 const data = await readFile(new URL("content.js", source), "utf8");
 const renderer = await readFile(new URL("app.js", source), "utf8");
 
@@ -25,8 +29,6 @@ for (const [page, layout] of Object.entries({ index: "classic", classic: "classi
 
 // Preserve links in the supplied résumé and the previous Jekyll site.
 const redirects = {
-  "key-takeaways-from-james-clears-atomic-habits": "/atomic-habits.html",
-  "how-to-win-friends-and-influence-people-lessons": "/how-to-win-friends.html",
   "current-projects": "/#research",
   projects: "/#research",
   publications: "/#publications",
